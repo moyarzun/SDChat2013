@@ -31,33 +31,42 @@
             this.textChat = new System.Windows.Forms.TextBox();
             this.textInput = new System.Windows.Forms.TextBox();
             this.sendButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.buttonRooms = new System.Windows.Forms.Button();
-            this.buttonExit = new System.Windows.Forms.Button();
-            this.buttonNick = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.conectarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.desconectarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nuevaSalaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buscarSalasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listaUsuarios = new System.Windows.Forms.ListBox();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textChat
             // 
-            this.textChat.Location = new System.Drawing.Point(18, 13);
+            this.textChat.Location = new System.Drawing.Point(12, 27);
             this.textChat.Multiline = true;
             this.textChat.Name = "textChat";
-            this.textChat.Size = new System.Drawing.Size(498, 335);
+            this.textChat.Size = new System.Drawing.Size(504, 321);
             this.textChat.TabIndex = 0;
             this.textChat.TextChanged += new System.EventHandler(this.textChat_TextChanged);
             // 
             // textInput
             // 
-            this.textInput.Location = new System.Drawing.Point(18, 356);
+            this.textInput.Location = new System.Drawing.Point(12, 356);
             this.textInput.Name = "textInput";
-            this.textInput.Size = new System.Drawing.Size(417, 20);
+            this.textInput.Size = new System.Drawing.Size(573, 20);
             this.textInput.TabIndex = 1;
             this.textInput.TextChanged += new System.EventHandler(this.textInput_TextChanged);
             // 
             // sendButton
             // 
-            this.sendButton.Location = new System.Drawing.Point(441, 354);
+            this.sendButton.Location = new System.Drawing.Point(591, 354);
             this.sendButton.Name = "sendButton";
             this.sendButton.Size = new System.Drawing.Size(75, 23);
             this.sendButton.TabIndex = 2;
@@ -65,66 +74,120 @@
             this.sendButton.UseVisualStyleBackColor = true;
             this.sendButton.Click += new System.EventHandler(this.sendButton_Click);
             // 
-            // textBox1
+            // menuStrip1
             // 
-            this.textBox1.Location = new System.Drawing.Point(537, 69);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(170, 278);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.archivoToolStripMenuItem,
+            this.usuarioToolStripMenuItem,
+            this.salasToolStripMenuItem,
+            this.ayudaToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(678, 24);
+            this.menuStrip1.TabIndex = 8;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // buttonRooms
+            // archivoToolStripMenuItem
             // 
-            this.buttonRooms.Location = new System.Drawing.Point(537, 40);
-            this.buttonRooms.Name = "buttonRooms";
-            this.buttonRooms.Size = new System.Drawing.Size(83, 23);
-            this.buttonRooms.TabIndex = 4;
-            this.buttonRooms.Text = "Salas";
-            this.buttonRooms.UseVisualStyleBackColor = true;
+            this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.conectarToolStripMenuItem,
+            this.desconectarToolStripMenuItem,
+            this.salirToolStripMenuItem});
+            this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.archivoToolStripMenuItem.Text = "Archivo";
             // 
-            // buttonExit
+            // usuarioToolStripMenuItem
             // 
-            this.buttonExit.Location = new System.Drawing.Point(626, 40);
-            this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(81, 23);
-            this.buttonExit.TabIndex = 5;
-            this.buttonExit.Text = "Salir";
-            this.buttonExit.UseVisualStyleBackColor = true;
+            this.usuarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.modificarToolStripMenuItem});
+            this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.usuarioToolStripMenuItem.Text = "Usuario";
             // 
-            // buttonNick
+            // salasToolStripMenuItem
             // 
-            this.buttonNick.Location = new System.Drawing.Point(652, 11);
-            this.buttonNick.Name = "buttonNick";
-            this.buttonNick.Size = new System.Drawing.Size(55, 23);
-            this.buttonNick.TabIndex = 6;
-            this.buttonNick.Text = "Cambiar";
-            this.buttonNick.UseVisualStyleBackColor = true;
+            this.salasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevaSalaToolStripMenuItem,
+            this.buscarSalasToolStripMenuItem});
+            this.salasToolStripMenuItem.Name = "salasToolStripMenuItem";
+            this.salasToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
+            this.salasToolStripMenuItem.Text = "Salas";
             // 
-            // label1
+            // ayudaToolStripMenuItem
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(542, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Nick:";
+            this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.acercaDeToolStripMenuItem});
+            this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.ayudaToolStripMenuItem.Text = "Ayuda";
+            // 
+            // conectarToolStripMenuItem
+            // 
+            this.conectarToolStripMenuItem.Name = "conectarToolStripMenuItem";
+            this.conectarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.conectarToolStripMenuItem.Text = "Conectar...";
+            // 
+            // desconectarToolStripMenuItem
+            // 
+            this.desconectarToolStripMenuItem.Name = "desconectarToolStripMenuItem";
+            this.desconectarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.desconectarToolStripMenuItem.Text = "Desconectar...";
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.salirToolStripMenuItem.Text = "Salir";
+            // 
+            // modificarToolStripMenuItem
+            // 
+            this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.modificarToolStripMenuItem.Text = "Modificar...";
+            // 
+            // nuevaSalaToolStripMenuItem
+            // 
+            this.nuevaSalaToolStripMenuItem.Name = "nuevaSalaToolStripMenuItem";
+            this.nuevaSalaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nuevaSalaToolStripMenuItem.Text = "Nueva sala...";
+            // 
+            // buscarSalasToolStripMenuItem
+            // 
+            this.buscarSalasToolStripMenuItem.Name = "buscarSalasToolStripMenuItem";
+            this.buscarSalasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.buscarSalasToolStripMenuItem.Text = "Buscar salas...";
+            // 
+            // acercaDeToolStripMenuItem
+            // 
+            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.acercaDeToolStripMenuItem.Text = "Acerca de...";
+            // 
+            // listaUsuarios
+            // 
+            this.listaUsuarios.FormattingEnabled = true;
+            this.listaUsuarios.Location = new System.Drawing.Point(522, 27);
+            this.listaUsuarios.Name = "listaUsuarios";
+            this.listaUsuarios.Size = new System.Drawing.Size(144, 316);
+            this.listaUsuarios.TabIndex = 9;
+            this.listaUsuarios.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(723, 399);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.buttonNick);
-            this.Controls.Add(this.buttonExit);
-            this.Controls.Add(this.buttonRooms);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(678, 399);
+            this.Controls.Add(this.listaUsuarios);
             this.Controls.Add(this.sendButton);
             this.Controls.Add(this.textInput);
             this.Controls.Add(this.textChat);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "SDChat 2013";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,11 +198,19 @@
         private System.Windows.Forms.TextBox textChat;
         private System.Windows.Forms.TextBox textInput;
         private System.Windows.Forms.Button sendButton;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button buttonRooms;
-        private System.Windows.Forms.Button buttonExit;
-        private System.Windows.Forms.Button buttonNick;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem conectarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem desconectarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usuarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nuevaSalaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem buscarSalasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
+        private System.Windows.Forms.ListBox listaUsuarios;
     }
 }
 
