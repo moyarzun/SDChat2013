@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace SDChat
 {
-    public partial class Form1 : Form
+    public partial class ChatGeneral : Form
     {
-        public Form1()
+        public ChatGeneral()
         {
             InitializeComponent();
         }
@@ -39,6 +39,11 @@ namespace SDChat
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

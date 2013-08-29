@@ -1,8 +1,9 @@
 C:\GitHub\SDChat2013\SDChat\SDChat\bin\Debug\SDChat.exe
 C:\GitHub\SDChat2013\SDChat\SDChat\bin\Debug\SDChat.pdb
-C:\GitHub\SDChat2013\SDChat\SDChat\obj\x86\Debug\SDChat.Form1.resources
 C:\GitHub\SDChat2013\SDChat\SDChat\obj\x86\Debug\SDChat.Login.resources
 C:\GitHub\SDChat2013\SDChat\SDChat\obj\x86\Debug\SDChat.Properties.Resources.resources
 C:\GitHub\SDChat2013\SDChat\SDChat\obj\x86\Debug\SDChat.csproj.GenerateResource.Cache
 C:\GitHub\SDChat2013\SDChat\SDChat\obj\x86\Debug\SDChat.exe
 C:\GitHub\SDChat2013\SDChat\SDChat\obj\x86\Debug\SDChat.pdb
+C:\GitHub\SDChat2013\SDChat\SDChat\obj\x86\Debug\SDChat.ChatGeneral.resources
+C:\GitHub\SDChat2013\SDChat\SDChat\obj\x86\Debug\SDChat.Registro.resources
