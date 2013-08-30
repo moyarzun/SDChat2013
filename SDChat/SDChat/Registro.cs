@@ -29,37 +29,25 @@ namespace SDChat
 
         private void buttonAceptar_Click(object sender, EventArgs e)
         {
-            string carpeta = @"C:\SDChat2013";
-            string ruta = @"C:\SDChat2013\" + textUsuario.Text + ".txt";
-
-            if (!Directory.Exists(carpeta))
-            {
-                Directory.CreateDirectory(carpeta);
-            }
-            else
-            {
-
-                if (!File.Exists(ruta))
-                {
-                    if (textContrasena.Text.Equals(textConfirmar.Text, StringComparison.Ordinal))
-                    {
-                        File.WriteAllText(ruta, textConfirmar.Text);
-                        this.Close();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Las contraseñas no coinciden.");
-                        textContrasena.Text = "";
-                        textConfirmar.Text = "";
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("El usuario ya está registrado.");
-                    textUsuario.Text = "";
-                    textContrasena.Text = "";
-                    textConfirmar.Text = "";
-                }
+            OperacionesUsuario operacion = new OperacionesUsuario();
+            int respuesta = operacion.registro(textUsuario.Text, textContrasena.Text, textConfirmar.Text);
+            if(respuesta == 1){
+                MessageBox.Show("Usuario registrado con éxito!");
+                this.Close();
+            } else if(respuesta == -1){
+                MessageBox.Show("Las contraseñas no coinciden.");
+                this.textContrasena.Text="";
+                this.textConfirmar.Text="";
+            }else if(respuesta == -2){
+                MessageBox.Show("El usuario ya está registrado.");
+                this.textUsuario.Text = "";
+                this.textContrasena.Text = "";
+                this.textConfirmar.Text = "";
+            }else{
+                MessageBox.Show("Error desconocido: " + respuesta);
+                this.textUsuario.Text = "";
+                this.textContrasena.Text = "";
+                this.textConfirmar.Text = "";
             }
         }
     }

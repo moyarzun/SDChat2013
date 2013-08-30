@@ -7,3 +7,5 @@ C:\GitHub\SDChat2013\SDChat\SDChat\obj\x86\Debug\SDChat.exe
 C:\GitHub\SDChat2013\SDChat\SDChat\obj\x86\Debug\SDChat.pdb
 C:\GitHub\SDChat2013\SDChat\SDChat\obj\x86\Debug\SDChat.ChatGeneral.resources
 C:\GitHub\SDChat2013\SDChat\SDChat\obj\x86\Debug\SDChat.Registro.resources
+C:\GitHub\SDChat2013\SDChat\SDChat\obj\x86\Debug\SDChat.csprojResolveAssemblyReference.cache
+C:\GitHub\SDChat2013\SDChat\SDChat\bin\Debug\SDChat.exe.config

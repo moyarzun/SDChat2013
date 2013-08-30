@@ -1,0 +1,4 @@
+C:\GitHub\SDChat2013\SDChat\UserService\bin\UserService.dll
+C:\GitHub\SDChat2013\SDChat\UserService\bin\UserService.pdb
+C:\GitHub\SDChat2013\SDChat\UserService\obj\Debug\UserService.dll
+C:\GitHub\SDChat2013\SDChat\UserService\obj\Debug\UserService.pdb
