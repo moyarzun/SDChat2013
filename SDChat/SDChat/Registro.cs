@@ -34,11 +34,11 @@ namespace SDChat
             if(respuesta == 1){
                 MessageBox.Show("Usuario registrado con éxito!");
                 this.Close();
-            } else if(respuesta == -1){
+            } else if(respuesta == 0){
                 MessageBox.Show("Las contraseñas no coinciden.");
                 this.textContrasena.Text="";
                 this.textConfirmar.Text="";
-            }else if(respuesta == -2){
+            }else if(respuesta == -1){
                 MessageBox.Show("El usuario ya está registrado.");
                 this.textUsuario.Text = "";
                 this.textContrasena.Text = "";

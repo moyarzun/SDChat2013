@@ -8,7 +8,7 @@ using System.IO;
 namespace UserService
 {
     /// <summary>
-    /// Summary description for Service1
+    /// Summary description for Registro
     /// </summary>
     [WebService(Namespace = "http://tempuri.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
@@ -39,13 +39,13 @@ namespace UserService
                 else
                 {
                     //MessageBox.Show("Las contraseñas no coinciden.");
-                    return -1;
+                    return 0;
                 }
             }
             else
             {
                 //MessageBox.Show("El usuario ya está registrado.");
-                return -2;
+                return -1;
             }
         }
     }

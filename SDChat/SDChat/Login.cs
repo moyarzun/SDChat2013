@@ -19,23 +19,30 @@ namespace SDChat
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string ruta = @"C:\SDChat2013\" + textUsuario.Text + ".txt";
-            if (!File.Exists(ruta))
+            OperacionesUsuario operacion = new OperacionesUsuario();
+            int respuesta = operacion.login(this.textUsuario.Text, this.textContrasena.Text);
+            if (respuesta == 1)
+            {
+                this.Hide();
+                new ChatGeneral().ShowDialog();
+                this.Close();
+            }
+            else if (respuesta == 0)
             {
                 MessageBox.Show("El usuario no existe.");
+                this.textUsuario.Text = "";
+                this.textContrasena.Text = "";
+            }
+            else if (respuesta == -1)
+            {
+                MessageBox.Show("La contraseña es incorrecta.");
+                this.textContrasena.Text = "";
             }
             else
             {
-                if (!textContrasena.Text.Equals(File.ReadAllText(ruta)))
-                {
-                    MessageBox.Show("Contraseña incorrecta.");
-                }
-                else
-                {
-                    this.Hide();
-                    new ChatGeneral().ShowDialog();
-                    this.Close();
-                }
+                MessageBox.Show("Error desconocido: " + respuesta);
+                this.textUsuario.Text = "";
+                this.textContrasena.Text = "";
             }
         }
 
