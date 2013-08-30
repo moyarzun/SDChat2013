@@ -33,8 +33,6 @@
             this.sendButton = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.conectarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.desconectarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -90,24 +88,10 @@
             // archivoToolStripMenuItem
             // 
             this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.conectarToolStripMenuItem,
-            this.desconectarToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.archivoToolStripMenuItem.Text = "Archivo";
-            // 
-            // conectarToolStripMenuItem
-            // 
-            this.conectarToolStripMenuItem.Name = "conectarToolStripMenuItem";
-            this.conectarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.conectarToolStripMenuItem.Text = "Conectar...";
-            // 
-            // desconectarToolStripMenuItem
-            // 
-            this.desconectarToolStripMenuItem.Name = "desconectarToolStripMenuItem";
-            this.desconectarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.desconectarToolStripMenuItem.Text = "Desconectar...";
             // 
             // salirToolStripMenuItem
             // 
@@ -127,7 +111,7 @@
             // modificarToolStripMenuItem
             // 
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
-            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.modificarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.modificarToolStripMenuItem.Text = "Modificar...";
             // 
             // salasToolStripMenuItem
@@ -142,13 +126,13 @@
             // nuevaSalaToolStripMenuItem
             // 
             this.nuevaSalaToolStripMenuItem.Name = "nuevaSalaToolStripMenuItem";
-            this.nuevaSalaToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.nuevaSalaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.nuevaSalaToolStripMenuItem.Text = "Nueva sala...";
             // 
             // buscarSalasToolStripMenuItem
             // 
             this.buscarSalasToolStripMenuItem.Name = "buscarSalasToolStripMenuItem";
-            this.buscarSalasToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.buscarSalasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.buscarSalasToolStripMenuItem.Text = "Buscar salas...";
             // 
             // ayudaToolStripMenuItem
@@ -162,7 +146,7 @@
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.acercaDeToolStripMenuItem.Text = "Acerca de...";
             // 
             // listaUsuarios
@@ -201,8 +185,6 @@
         private System.Windows.Forms.Button sendButton;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem conectarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem desconectarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem;
